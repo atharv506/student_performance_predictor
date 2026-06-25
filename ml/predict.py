@@ -10,29 +10,22 @@ loaded_object = joblib.load(model_path)
 feature_columns = joblib.load(feature_columns_path)
 
 student_data = {
-        "study_hours_per_day": 3,
-        "deep_work_sessions": 2,
-        "assignment_completion_rate": 80,
-        "attendance_percentage": 90,
-        "social_media_hours": 2,
-        "doomscrolling_before_sleep": 1,
-        "ai_tool_usage_hours": 1,
-        "gaming_hours": 1,
-        "stress_level": 4,
-        "motivation_level": 4,
+        "study_hours_per_day": 2.1,
+        "deep_work_sessions": 5,
+        "assignment_completion_rate": 63,
+        "attendance_percentage": 99,
+        "social_media_hours": 3.1,
+        "gaming_hours": 3.3,
+        "stress_level": 9,
+        "motivation_level": 6,
         "focus_score": 7,
-        "procrastination_index": 2,
-        "mental_state": 'Distracted',
-        "sleep_hours": 7,
-        "caffeine_intake": 1,
-        "physical_activity_hours": 1,
-        "internet_quality": 4,
-        "financial_stress": 2,
-        "learning_style": 'Visual',
-        "productivity_after_midnight": 3,
-        "revision_efficiency": 4,
-        "burnout_risk": 2,
-        "consistency_score": 3
+        "procrastination_index": 10,
+        "mental_state": 'Burnout',
+        "sleep_hours": 6,
+        "financial_stress": 7,
+        "revision_efficiency":46,
+        "burnout_risk": 4,
+        "consistency_score": 1
 }
 
 prediction_input = pd.DataFrame([student_data])
