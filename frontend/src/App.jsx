@@ -97,7 +97,11 @@ function App() {
         deep_work_sessions: Number(formData.deep_work_sessions),
         mental_state: formData.mental_state
       };
-      const backendBase = process.env.BACKEND_URL || 'https://student-performance-predictor-khzf.onrender.com/';
+      const backendBase = import.meta.env.VITE_BACKEND_URL;
+
+      if (!backendBase) {
+        throw new Error('VITE_BACKEND_URL is not set');
+      }
 
       const response = await fetch(`${backendBase}/api/predict/`, {
         method: 'POST',
