@@ -97,7 +97,7 @@ function App() {
         deep_work_sessions: Number(formData.deep_work_sessions),
         mental_state: formData.mental_state
       };
-      const backendBase = process.env.BACKEND_URL || 'https://student-performance-predictor-f8y8nj6iw.vercel.app';
+      const backendBase = process.env.BACKEND_URL || 'https://student-performance-predictor-khzf.onrender.com/';
 
       const response = await fetch(`${backendBase}/api/predict/`, {
         method: 'POST',
