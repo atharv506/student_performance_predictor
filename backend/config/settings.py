@@ -51,11 +51,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 CORS_ALLOWED_ORIGINS = [
-    "https://student-performance-predictor-f8y8nj6iw.vercel.app/",
+    "https://student-performance-predictor-f8y8nj6iw.vercel.app",
     "http://localhost:5173",
 ]
 CSRF_TRUSTED_ORIGINS = [
-    "https://student-performance-predictor-f8y8nj6iw.vercel.app/",
+    "https://student-performance-predictor-f8y8nj6iw.vercel.app",
     "http://localhost:5173",
 ]
 ROOT_URLCONF = 'config.urls'
